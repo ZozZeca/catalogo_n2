@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982590469741",
+    "project_id": "catalogon2",
+    "storage_bucket": "catalogon2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982590469741:android:988768e1aef54e121fb164",
+        "android_client_info": {
+          "package_name": "com.example.catalogo_n2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Y4PSZnobld9rluKl_dQ5sjQxDuF52z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
