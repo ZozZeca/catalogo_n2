@@ -5,7 +5,7 @@ import '../viewmodels/product_viewmodel.dart';
 class ProductFormView extends StatefulWidget {
   final Product? product;
 
-  ProductFormView({this.product});
+  const ProductFormView({super.key, this.product});
 
   @override
   _ProductFormViewState createState() => _ProductFormViewState();
@@ -32,27 +32,27 @@ class _ProductFormViewState extends State<ProductFormView> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.product == null ? 'Adicionar Produto' : 'Editar Produto')),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
           child: Column(
             children: [
               TextFormField(
                 controller: _nameController,
-                decoration: InputDecoration(labelText: 'Nome'),
+                decoration: const InputDecoration(labelText: 'Nome'),
                 validator: (value) => value!.isEmpty ? 'Informe o nome do produto' : null,
               ),
               TextFormField(
                 controller: _descriptionController,
-                decoration: InputDecoration(labelText: 'Descrição'),
+                decoration: const InputDecoration(labelText: 'Descrição'),
               ),
               TextFormField(
                 controller: _priceController,
-                decoration: InputDecoration(labelText: 'Preço'),
+                decoration: const InputDecoration(labelText: 'Preço'),
                 keyboardType: TextInputType.number,
                 validator: (value) => value!.isEmpty ? 'Informe o preço' : null,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
                   if (_formKey.currentState!.validate()) {

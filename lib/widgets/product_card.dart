@@ -7,7 +7,7 @@ class ProductCard extends StatelessWidget {
   final Product product;
   final ProductViewModel viewModel;
 
-  ProductCard({required this.product, required this.viewModel});
+  const ProductCard({super.key, required this.product, required this.viewModel});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class ProductCard extends StatelessWidget {
         title: Text(product.name),
         subtitle: Text(product.description),
         trailing: IconButton(
-          icon: Icon(Icons.delete, color: Colors.red),
+          icon: const Icon(Icons.delete, color: Colors.red),
           onPressed: () => viewModel.deleteProduct(product.id),
         ),
         onTap: () {
